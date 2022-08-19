@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+
+}
+::selection{
+    background-color: yellow ;
+  
+}
+.nav{
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+.item{
+    
+    padding: 15px;
+    margin: 10px;
+    margin-top: 30px;
+    background-color: rgb(0, 0, 0,.7);
+    border-radius: 50px;
+    color:white;
+    font-size: 18px;
+    flex-shrink: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+    
+}
+.item:hover{
+    padding: 15px;
+    margin: 10px;
+    margin-top: 30px;
+    background-color: rgba(255, 255, 255);
+    border-radius: 50px;
+    color:black;
+    font-size: 18px;
+    flex-shrink: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.hero-text-content-h1{
+    
+    max-width: 500px;
+    margin: 0 auto;
+    font-size: 35px;
+    line-height: 1.25;
+    text-align: center;
+    margin-top: 50px;
+    color: white;
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.hero-text-content-h2 {
+    
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 50px;
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 15px;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+}
+.search-item{
+    width: 600px;
+    height: 60px;
+    border-radius: 60px;
+    border: 2px solid white;
+    margin-bottom: 50px;
+}
+.search-item:focus{
+    outline: 0;
+    border: 2px solid white;
+    
+}
+
+.footer{
+    flex-wrap: wrap;
+}
+.footer-item{
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 20px;
+    padding: 6px 15px;
+    border: 1px solid rgba(255,255,255,0.6);
+    border-radius: 50px;
+    margin: 8px;
+    flex-shrink: 0;
+    
+}
+.footer-item:hover{
+    outline: 1px solid white;
+    outline-offset: -1px;
+}
+
+.images{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+
+
+.img-item{
+        width:330px;
+        border-radius: 17px;
+        margin: 20px;
+        flex-shrink: 0;
+        transition: transform 2s;
+}
+.img-item:hover{
+    transform: scale(1.3,1.3);
+}
+    
+@media only screen and (max-width: 760px){
+        .img-item{
+            width:90%;
+            border-radius: 17px;
+            margin: 20px;
+            
+    }
+}
